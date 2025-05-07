@@ -1,0 +1,11 @@
+tasks:
+  - name: Install VSCode
+    type: winget
+    parameters:
+      id: Microsoft.VisualStudioCode
+
+  - name: Install Teams Toolkit Extension
+    type: powershell
+    parameters:
+      script: |
+        code --install-extension ms-teams.vscode-teams
